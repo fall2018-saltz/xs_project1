@@ -1,7 +1,7 @@
 
 #Step A: Load and Merge datasets
 #1)	Read in the census dataset (using the function created in HW 3)
-popState <- row_data
+popState <- raw_data
 my_func <- function(popState)
 {
     popState <- popState[-c(1,53),-c(1,2,3,4)]
