@@ -23,8 +23,12 @@
             "assigned_to": "xsong21",
             "name": "clean.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "MergeArrests.R"
         }
     ],
-    "updated_at": "2018-10-11 15:13:23",
+    "updated_at": "2018-10-11 15:13:55",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
