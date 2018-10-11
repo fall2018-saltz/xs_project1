@@ -7,35 +7,46 @@
         {
             "ports": [
                 {
-                    "input": "raw_data",
-                    "type": "csv"
+                    "input": "popState",
+                    "output": "popState",
+                    "type": "r_obj"
+                },
+                {
+                    "input": "arrests",
+                    "output": "arrests",
+                    "type": "r_obj"
                 }
             ],
-            "source": "raw_data.csv",
-            "target": "clean.R"
+            "source": "clean.R",
+            "target": "MergeArrests.R"
         },
         {
             "ports": [
                 {
-                    "output": "clean_data",
+                    "input": "raw_data",
                     "type": "csv"
                 }
             ],
-            "source": "clean.R",
-            "target": "data.csv"
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
         }
     ],
     "nodes": [
         {
-            "name": "raw_data.csv"
+            "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
-            "name": "clean.R"
+            "assigned_to": "xsong21",
+            "name": "clean.R",
+            "task_status": "in progress"
         },
         {
-            "name": "data.csv"
+            "assigned_to": "xsong21",
+            "desc": "",
+            "name": "MergeArrests.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-09 19:37:52",
+    "updated_at": "2018-10-11 15:17:08",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
