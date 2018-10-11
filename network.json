@@ -13,6 +13,22 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "popState",
+                    "output": "popState",
+                    "type": "r_obj"
+                },
+                {
+                    "input": "arrests",
+                    "output": "arrests",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "MergeArrests.R"
         }
     ],
     "nodes": [
@@ -29,6 +45,6 @@
             "name": "MergeArrests.R"
         }
     ],
-    "updated_at": "2018-10-11 15:13:55",
+    "updated_at": "2018-10-11 15:14:29",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
