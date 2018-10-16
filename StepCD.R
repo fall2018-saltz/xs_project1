@@ -29,7 +29,7 @@ ny
 ne=map_data("state", xlim=c(ny$lon-10,ny$lon+10), ylim=c(ny$lat-10,ny$lat+10))
 map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
 map.simple3 <- map.simple3 + geom_map(map = ne, aes(fill=mergedDF2$Murder))
-map.simple3 <- map.simple3 + expand_limits(x=ny$lon-10,y=ny$lat-10) + coord_map()
+map.simple3 <- map.simple3 + coord_map()
 map.simple3 
 
 map.simple4 <- map.simple3 + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
