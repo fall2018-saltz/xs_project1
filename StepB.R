@@ -11,7 +11,7 @@ us=map_data("state")
 
 map.simple <- ggplot(mergedDF2, aes(map_id = stateNames))
 
-map.simple <- map.simple + geom_map(map = us, fill='light blue', color='black')
+map.simple <- map.simple + geom_map(map = us, fill=state.area, color='black')
  
 map.simple <- map.simple + expand_limits(x=us$long,y=us$lat)  
 
