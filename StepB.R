@@ -6,3 +6,4 @@ library(ggplot2)
 library(ggmap)
 map.simple <- ggplot(mergedDF2,aes(map_id=state))
 map.simple <- map.simple + geom_map(map=us, fill= "state", +color="black")
+map.simple
