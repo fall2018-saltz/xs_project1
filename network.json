@@ -29,6 +29,17 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedDF2",
+                    "output": "mergedDF2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergeArrests.R",
+            "target": "StepB.R"
         }
     ],
     "nodes": [
@@ -51,6 +62,6 @@
             "name": "StepB.R"
         }
     ],
-    "updated_at": "2018-10-16 14:25:03",
+    "updated_at": "2018-10-16 14:25:21",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
