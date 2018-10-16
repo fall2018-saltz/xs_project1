@@ -21,8 +21,9 @@ map.simple2
 
 #3) Repeat step C, but only show the states in the north east
 
-require('RDSTK')
-test <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
+# require('RDSTK')
+# test <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
+# test
 
 ne=map_data("state", xlim=c(ny$lon-10,ny$lon+10), ylim=c(ny$lat-10,ny$lat+10))
 map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
