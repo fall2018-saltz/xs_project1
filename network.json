@@ -88,10 +88,15 @@
             "name": "StepB.png"
         },
         {
+            "assigned_to": "xsong21",
             "desc": "",
-            "name": "StepC.R"
+            "name": "StepC.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "StepC1.png"
         }
     ],
-    "updated_at": "2018-10-16 16:40:46",
+    "updated_at": "2018-10-16 16:43:30",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
