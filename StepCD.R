@@ -21,7 +21,8 @@ map.simple2
 
 #3) Repeat step C, but only show the states in the north east
 
-# require('RDSTK')
+ny <- geocode("New York")
+#require('RDSTK')
 # test <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
 # test
 
