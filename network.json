@@ -75,8 +75,12 @@
         },
         {
             "name": "StepB.png"
+        },
+        {
+            "desc": "",
+            "name": "StepC.R"
         }
     ],
-    "updated_at": "2018-10-16 15:11:05",
+    "updated_at": "2018-10-16 16:40:28",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
