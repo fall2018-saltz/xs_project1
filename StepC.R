@@ -15,6 +15,6 @@ map.simple <- map.simple + geom_map(map = us, aes(fill=mergedDF2$Murder))
 map.simple <- map.simple + expand_limits(x=us$long,y=us$lat) + coord_map()
 
 map.simple
-#2) Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
-
-
+#2) Show the population as a circle per state (the larger the population, 
+# the larger the circle), using the location defined by the center of each state
+map.simple2 <- ggplot(mergedDF2, aes(map_id = stateNames))
