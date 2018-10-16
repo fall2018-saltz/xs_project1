@@ -12,6 +12,6 @@ head(mergedDF2)
 #4) Add the area of each state, and the center of each state, 
 #to the merged dataframe, using the ‘state.area’, ‘state.center’ and ‘state.name’ vectors
 library(ggmap)
-libray(ggplot2)
+library(ggplot2)
 stateDF <- data.frame(state.Name,state.area,state.center)
 head(stateDF)
