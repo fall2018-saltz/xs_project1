@@ -5,7 +5,7 @@ head(mergedDF2)
 library(ggplot2)
 library(ggmap)
 library(maps)
-library(mapdata)
+
 
 us=map_data("state")
 map.simple <- ggplot(mergedDF2,aes(map_id=state))
