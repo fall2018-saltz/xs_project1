@@ -4,6 +4,7 @@ head(mergedDF2)
 library(ggplot2)
 library(ggmap)
 library(maps)
+
 #1) Repeat step B, but color code the map based on the murder rate of each state.
 mergedDF2$stateNames <- tolower(mergedDF2$state.name)
 us=map_data("state")
