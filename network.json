@@ -50,6 +50,17 @@
             ],
             "source": "StepB.R",
             "target": "StepB.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedDF2",
+                    "output": "mergedDF2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergeArrests.R",
+            "target": "StepC.R"
         }
     ],
     "nodes": [
@@ -81,6 +92,6 @@
             "name": "StepC.R"
         }
     ],
-    "updated_at": "2018-10-16 16:40:28",
+    "updated_at": "2018-10-16 16:40:46",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
