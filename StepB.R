@@ -6,6 +6,6 @@ library(ggplot2)
 library(ggmap)
 us=map_data("state")
 map.simple <- ggplot(mergedDF2,aes(map_id=state))
-map.simple <- map.simple + geom_map(map = us, fill = region, color = "black")
+map.simple <- map.simple + geom_map(map = us, fill = "light bule", color = "black")
 #map.simple <- map.simple + geom_polygon(aes(fill = region, group = group), color = "white")
 map.simple
