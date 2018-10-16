@@ -24,7 +24,6 @@ map.simple2
 require('RDSTK')
 test <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
 
-ny
 ne=map_data("state", xlim=c(ny$lon-10,ny$lon+10), ylim=c(ny$lat-10,ny$lat+10))
 map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
 map.simple3 <- map.simple3 + geom_map(map = ne, aes(fill=mergedDF2$Murder))
