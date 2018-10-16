@@ -19,3 +19,5 @@ map.simple
 # the larger the circle), using the location defined by the center of each state
 map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
 map.simple2
+
+#3) Repeat step C, but only show the states in the north east
