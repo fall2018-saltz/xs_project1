@@ -20,4 +20,5 @@ map.simple
 map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
 map.simple2
 
-#3) Repeat step C, but only show the states in the north east
+#3) Repeat step C, but only show the states in the north east <- map_data("state", region="louisiana")
+
