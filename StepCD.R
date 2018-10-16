@@ -20,3 +20,4 @@ map.simple2
 
 #3) Repeat step C, but only show the states in the north east
 geocode("new york")
+map.simple3 <- map.simple + 
