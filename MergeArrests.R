@@ -13,5 +13,5 @@ head(mergedDF2)
 #to the merged dataframe, using the ‘state.area’, ‘state.center’ and ‘state.name’ vectors
 library(ggmap)
 library(ggplot2)
-stateDF <- data.frame(state.Name,state.area,state.center)
+stateDF <- data.frame(state.name,state.area,state.center)
 head(stateDF)
