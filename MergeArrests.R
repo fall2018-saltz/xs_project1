@@ -14,3 +14,4 @@ head(mergedDF2)
 stateName <- state.stateName
 area <- state.area
 center <- state.center
+stateDF <- dataframe(stateName,area,center)
