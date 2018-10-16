@@ -19,9 +19,7 @@ map.simple
 map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
 map.simple2
 
-#3) Repeat step C, but only show the states in the north east
-
-ny <- geocode(geocode(source ="dsk","columbia university, new york, ny")
+#3) Repeat step C, but only show the states in the north eastny <- geocode(geocode(source ="dsk","columbia university, new york, ny")
 ny
 #require('RDSTK')
 # test <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
