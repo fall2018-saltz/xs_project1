@@ -40,6 +40,16 @@
             ],
             "source": "MergeArrests.R",
             "target": "StepB.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "StepB.R",
+            "target": "StepB.png"
         }
     ],
     "nodes": [
@@ -67,6 +77,6 @@
             "name": "StepB.png"
         }
     ],
-    "updated_at": "2018-10-16 14:32:53",
+    "updated_at": "2018-10-16 14:33:03",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
