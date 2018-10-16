@@ -12,6 +12,7 @@ map.simple <- ggplot(mergedDF2, aes(map_id = stateNames))
 map.simple <- map.simple + geom_map(map = us, aes(fill=mergedDF2$Murder))
 map.simple <- map.simple + expand_limits(x=us$long,y=us$lat) + coord_map()
 map.simple
+
 #2) Show the population as a circle per state (the larger the population, 
 # the larger the circle), using the location defined by the center of each state
 map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
@@ -19,4 +20,7 @@ map.simple2
 
 #3) Repeat step C, but only show the states in the north east
 ne<- map_data("state", region="north east")
-
+map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
+map.simple3 <- map.simple3 + geom_map(map = us, aes(fill=mergedDF2$Murder))
+map.simple3 <- map.simple3 + expand_limits(x=us$long,y=us$lat) + coord_map()
+map.simple3
