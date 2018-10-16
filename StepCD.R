@@ -19,8 +19,8 @@ map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=merged
 map.simple2
 
 #3) Repeat step C, but only show the states in the north east
-geocode("new york")
-ne=map_data("state", xlim=c(lon-10,lon+10), ylim=c(lat-10,lat+10))
+ny <- geocode("new york")
+ne=map_data("state", xlim=c(ny$lon-10,ny$lon+10), ylim=c(ny$lat-10,ny$lat+10))
 map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
 map.simple3 <- map.simple3 + geom_map(map = ne, aes(fill=mergedDF2$Murder))
 map.simple3 <- map.simple3 + expand_limits(x=us$long,y=us$lat) + coord_map()
