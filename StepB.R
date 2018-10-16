@@ -9,7 +9,7 @@ library(maps)
 
 us=map_data("state")
 
-map.simple <- ggplot(data= mergedDF2, aes(map_id = us))
+map.simple <- ggplot(data= mergedDF2, aes(map_id = state))
 
 map.simple <- map.simple + geom_map(map = us, fill = "light bule", color = "black")
 map.simple
