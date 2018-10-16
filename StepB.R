@@ -11,5 +11,5 @@ us=map_data("state")
 
 map.simple <- ggplot(data= mergedDF2, aes(map_id = stateNames,fill=factor(overall.quantiles)))
 
-map.simple <- map.simple + geom_map(map = us, fill = "light bule", color = "black")
+map.simple <- map.simple + geom_map(map = us, fill = "light blue", color = "black")
 map.simple
