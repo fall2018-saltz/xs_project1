@@ -13,3 +13,4 @@ map.simple <- ggplot(mergedDF2, aes(map_id = stateNames))
 
 map.simple <- map.simple + geom_map(map = us, fill = "white", color = "black")
 map.simple
+head(map.simple)
