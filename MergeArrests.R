@@ -17,5 +17,6 @@ stateDF <- data.frame(state.name,state.area,state.center)
 head(stateDF)
 mergedDF2 <- merge(mergedDF, stateDF, by=0, all=TRUE)
 head(mergedDF2)
-mergedDF<- mergedDF[ -c(1) ]
-head(mergedDF)
+# Drop the Row.names column
+mergedDF2<- mergedDF2[ -c(1) ]
+head(mergedDF2)
