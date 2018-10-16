@@ -62,8 +62,11 @@
             "desc": "",
             "name": "StepB.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "StepB.png"
         }
     ],
-    "updated_at": "2018-10-16 14:29:11",
+    "updated_at": "2018-10-16 14:32:53",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
