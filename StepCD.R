@@ -21,8 +21,8 @@ map.simple2
 
 #3) Repeat step C, but only show the states in the north east
 require('RDSTK')
-street2coordinates("Phoenix+Arizona+United+States")curl "http://www.datasciencetoolkit.org/maps/api/geocode/json?sensor=false&address=790+7th+Avenue,+Mountain+View,+NY"
-ny <- geocode("new york")
+ny <- street2coordinates("New York+New York+United+States")
+
 ny
 ne=map_data("state", xlim=c(ny$lon-10,ny$lon+10), ylim=c(ny$lat-10,ny$lat+10))
 map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
