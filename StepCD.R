@@ -20,6 +20,7 @@ map.simple2 <- map.simple + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=merged
 map.simple2
 
 #3) Repeat step C, but only show the states in the north east
+library('RDSTK')
 require('RDSTK')
 ny <- street2coordinates("2543 Graystone Place, Simi Valley, CA 93065")
 
