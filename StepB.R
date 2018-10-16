@@ -13,6 +13,6 @@ map.simple <- ggplot(mergedDF2, aes(map_id = stateNames))
 
 map.simple <- map.simple + geom_map(map = us, aes(fill=mergedDF2$state.area))
  
-map.simple <- map.simple + expand_limits(x=us$long,y=us$lat)  
+map.simple <- map.simple + expand_limits(x=us$long,y=us$lat) + coord_map()
 
 map.simple
