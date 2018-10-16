@@ -27,3 +27,7 @@ map.simple3 <- ggplot(mergedDF2, aes(map_id = stateNames))
 map.simple3 <- map.simple3 + geom_map(map = ne, aes(fill=mergedDF2$Murder))
 map.simple3 <- map.simple3 + expand_limits(x=us$long,y=us$lat) + coord_map()
 map.simple3 
+
+map.simple4 <- map.simple3 + geom_point(data=mergedDF2,aes(x=mergedDF2$x,y=mergedDF2$y,size=mergedDF2$population))
+map.simple4
+
