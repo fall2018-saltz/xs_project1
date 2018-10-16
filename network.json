@@ -81,6 +81,16 @@
             ],
             "source": "StepCD.R",
             "target": "StepC2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple3",
+                    "type": "png"
+                }
+            ],
+            "source": "StepCD.R",
+            "target": "StepD1.png"
         }
     ],
     "nodes": [
@@ -123,6 +133,6 @@
             "name": "StepD1.png"
         }
     ],
-    "updated_at": "2018-10-16 19:29:15",
+    "updated_at": "2018-10-16 19:29:27",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
