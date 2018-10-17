@@ -29,6 +29,78 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedDF2",
+                    "output": "mergedDF2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergeArrests.R",
+            "target": "StepB.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "StepB.R",
+            "target": "StepB.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedDF2",
+                    "output": "mergedDF2",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergeArrests.R",
+            "target": "StepCD.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "StepCD.R",
+            "target": "StepC1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple2",
+                    "type": "png"
+                }
+            ],
+            "source": "StepCD.R",
+            "target": "StepC2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple3",
+                    "type": "png"
+                }
+            ],
+            "source": "StepCD.R",
+            "target": "StepD1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple4",
+                    "type": "png"
+                }
+            ],
+            "source": "StepCD.R",
+            "target": "StepD2.png"
         }
     ],
     "nodes": [
@@ -45,8 +117,35 @@
             "desc": "",
             "name": "MergeArrests.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "xsong21",
+            "desc": "",
+            "name": "StepB.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "StepB.png"
+        },
+        {
+            "name": "StepC1.png"
+        },
+        {
+            "name": "StepC2.png"
+        },
+        {
+            "assigned_to": "xsong21",
+            "desc": "",
+            "name": "StepCD.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "StepD1.png"
+        },
+        {
+            "name": "StepD2.png"
         }
     ],
-    "updated_at": "2018-10-11 15:17:08",
+    "updated_at": "2018-10-16 19:29:55",
     "url": "https://github.com/fall2018-saltz/xs_project1"
 }
